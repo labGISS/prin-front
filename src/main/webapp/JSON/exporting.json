@@ -1,0 +1,378 @@
+[
+	{
+		"id": 3124,
+		"labels": [
+			"Exporting"
+		],
+		"name": "AEROSPACE VEHICLES AND DEFENCE",
+		"group": "nodes"
+	},
+	{
+		"id": 3125,
+		"labels": [
+			"Exporting"
+		],
+		"name": "AGRICULTURAL INPUTS ANDE SERVICES",
+		"group": "nodes"
+	},
+	{
+		"id": 3126,
+		"labels": [
+			"Exporting"
+		],
+		"name": "APPAREL",
+		"group": "nodes"
+	},
+	{
+		"id": 3127,
+		"labels": [
+			"Exporting"
+		],
+		"name": "APPLIANCES",
+		"group": "nodes"
+	},
+	{
+		"id": 3128,
+		"labels": [
+			"Exporting"
+		],
+		"name": "AUTOMOTIVE",
+		"group": "nodes"
+	},
+	{
+		"id": 3129,
+		"labels": [
+			"Exporting"
+		],
+		"name": "BIOPHARMACEUTICALS",
+		"group": "nodes"
+	},
+	{
+		"id": 3130,
+		"labels": [
+			"Exporting"
+		],
+		"name": "BUSINESS SERVICES",
+		"group": "nodes"
+	},
+	{
+		"id": 3131,
+		"labels": [
+			"Exporting"
+		],
+		"name": "COAL MINING",
+		"group": "nodes"
+	},
+	{
+		"id": 3132,
+		"labels": [
+			"Exporting"
+		],
+		"name": "COMMUNICATIONS EQUIPMENT AND SERVICES",
+		"group": "nodes"
+	},
+	{
+		"id": 3133,
+		"labels": [
+			"Exporting"
+		],
+		"name": "CONSTRUCTION PRODUCTS AND SERVICES",
+		"group": "nodes"
+	},
+	{
+		"id": 3134,
+		"labels": [
+			"Exporting"
+		],
+		"name": "DISTRIBUTION AND ELECTRONIC COMMERCE",
+		"group": "nodes"
+	},
+	{
+		"id": 3135,
+		"labels": [
+			"Exporting"
+		],
+		"name": "DOWNSTREAM CHEMICAL PRODUCTS",
+		"group": "nodes"
+	},
+	{
+		"id": 3136,
+		"labels": [
+			"Exporting"
+		],
+		"name": "DOWNSTREAM METAL PRODUCTS",
+		"group": "nodes"
+	},
+	{
+		"id": 3137,
+		"labels": [
+			"Exporting"
+		],
+		"name": "EDUCATION AND KNOWLEDGE CREATION",
+		"group": "nodes"
+	},
+	{
+		"id": 3138,
+		"labels": [
+			"Exporting"
+		],
+		"name": "WOOD PRODUCTS",
+		"group": "nodes"
+	},
+	{
+		"id": 3139,
+		"labels": [
+			"Exporting"
+		],
+		"name": "ENVIRONMENTAL SERVICES",
+		"group": "nodes"
+	},
+	{
+		"id": 3140,
+		"labels": [
+			"Exporting"
+		],
+		"name": "FINANCIAL SERVICES",
+		"group": "nodes"
+	},
+	{
+		"id": 3141,
+		"labels": [
+			"Exporting"
+		],
+		"name": "FISHING AND FISHING PRODUCTS",
+		"group": "nodes"
+	},
+	{
+		"id": 3142,
+		"labels": [
+			"Exporting"
+		],
+		"name": "FOOD PROCESSING AND MANUFACTURING",
+		"group": "nodes"
+	},
+	{
+		"id": 3143,
+		"labels": [
+			"Exporting"
+		],
+		"name": "FOOTWEAR",
+		"group": "nodes"
+	},
+	{
+		"id": 3144,
+		"labels": [
+			"Exporting"
+		],
+		"name": "FURNITURE",
+		"group": "nodes"
+	},
+	{
+		"id": 3145,
+		"labels": [
+			"Exporting"
+		],
+		"name": "HOSPITALITY AND TOURISM",
+		"group": "nodes"
+	},
+	{
+		"id": 3146,
+		"labels": [
+			"Exporting"
+		],
+		"name": "INFORMATION TECHNOLOGY AND ANALYTICAL INSTRUMENTS",
+		"group": "nodes"
+	},
+	{
+		"id": 3147,
+		"labels": [
+			"Exporting"
+		],
+		"name": "INSURANCE SERVICES",
+		"group": "nodes"
+	},
+	{
+		"id": 3148,
+		"labels": [
+			"Exporting"
+		],
+		"name": "JEWELLERY AND PRECIOUS METALS",
+		"group": "nodes"
+	},
+	{
+		"id": 3149,
+		"labels": [
+			"Exporting"
+		],
+		"name": "LEATHER AND RELATED PRODUCTS",
+		"group": "nodes"
+	},
+	{
+		"id": 3150,
+		"labels": [
+			"Exporting"
+		],
+		"name": "LIGHTING AND ELECTRICAL EQUIPMENT",
+		"group": "nodes"
+	},
+	{
+		"id": 3151,
+		"labels": [
+			"Exporting"
+		],
+		"name": "LIVESTOCK PROCESSING",
+		"group": "nodes"
+	},
+	{
+		"id": 3152,
+		"labels": [
+			"Exporting"
+		],
+		"name": "MARKETING, DESIGN, AND PUBLISHING",
+		"group": "nodes"
+	},
+	{
+		"id": 3153,
+		"labels": [
+			"Exporting"
+		],
+		"name": "MEDICAL DEVICES",
+		"group": "nodes"
+	},
+	{
+		"id": 3154,
+		"labels": [
+			"Exporting"
+		],
+		"name": "METALWORKING TECHNOLOGY",
+		"group": "nodes"
+	},
+	{
+		"id": 3155,
+		"labels": [
+			"Exporting"
+		],
+		"name": "MUSIC AND SOUND RECORDING",
+		"group": "nodes"
+	},
+	{
+		"id": 3156,
+		"labels": [
+			"Exporting"
+		],
+		"name": "NON-METAL MINING",
+		"group": "nodes"
+	},
+	{
+		"id": 3157,
+		"labels": [
+			"Exporting"
+		],
+		"name": "OIL AND GAS PRODUCTION AND TRANSPORTATION",
+		"group": "nodes"
+	},
+	{
+		"id": 3158,
+		"labels": [
+			"Exporting"
+		],
+		"name": "PAPER AND PACKAGING",
+		"group": "nodes"
+	},
+	{
+		"id": 3159,
+		"labels": [
+			"Exporting"
+		],
+		"name": "PERFORMING ARTS",
+		"group": "nodes"
+	},
+	{
+		"id": 3160,
+		"labels": [
+			"Exporting"
+		],
+		"name": "PLASTICS",
+		"group": "nodes"
+	},
+	{
+		"id": 3161,
+		"labels": [
+			"Exporting"
+		],
+		"name": "PRINTING SERVICES",
+		"group": "nodes"
+	},
+	{
+		"id": 3162,
+		"labels": [
+			"Exporting"
+		],
+		"name": "PRODUCTION TECHNOLOGY AND HEAVY MACHINERY",
+		"group": "nodes"
+	},
+	{
+		"id": 3163,
+		"labels": [
+			"Exporting"
+		],
+		"name": "RECREATIONAL AND SMALL ELECTRIC GOODS",
+		"group": "nodes"
+	},
+	{
+		"id": 3164,
+		"labels": [
+			"Exporting"
+		],
+		"name": "TEXTILE MANUFACTURING",
+		"group": "nodes"
+	},
+	{
+		"id": 3165,
+		"labels": [
+			"Exporting"
+		],
+		"name": "TRANSPORTATION AND LOGISTICS",
+		"group": "nodes"
+	},
+	{
+		"id": 3166,
+		"labels": [
+			"Exporting"
+		],
+		"name": "UPSTREAM CHEMICAL PRODUCTS",
+		"group": "nodes"
+	},
+	{
+		"id": 3167,
+		"labels": [
+			"Exporting"
+		],
+		"name": "UPSTREAM METAL MANUFACTURING",
+		"group": "nodes"
+	},
+	{
+		"id": 3168,
+		"labels": [
+			"Exporting"
+		],
+		"name": "VIDEO PRODUCTION AND DISTRIBUTION",
+		"group": "nodes"
+	},
+	{
+		"id": 3169,
+		"labels": [
+			"Exporting"
+		],
+		"name": "VULCANIZED AND FIRED MATERIALS",
+		"group": "nodes"
+	},
+	{
+		"id": 3170,
+		"labels": [
+			"Exporting"
+		],
+		"name": "WATER TRANSPORTATION",
+		"group": "nodes"
+	}
+]

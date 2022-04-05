@@ -1,0 +1,1936 @@
+[
+	{
+		"id": 3137,
+		"labels": [
+			"Exporting"
+		],
+		"name": "EDUCATION AND KNOWLEDGE CREATION",
+		"group": "nodes"
+	},
+	{
+		"id": 124,
+		"source": 3137,
+		"target": 2530,
+		"group": "edges"
+	},
+	{
+		"id": 2530,
+		"labels": [
+			"Ateco"
+		],
+		"code": "7219",
+		"description": "Altre attività di ricerca e sviluppo sperimentale nel campo delle scienze naturali e dell'ingegneria",
+		"group": "nodes"
+	},
+	{
+		"id": 20363,
+		"source": 2530,
+		"target": 3191,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 3.0,
+		"group": "edges"
+	},
+	{
+		"id": 3191,
+		"labels": [
+			"Sll"
+		],
+		"code": "1811",
+		"name": "PAOLA",
+		"ncom": 4,
+		"population": 31833,
+		"area": 150,
+		"lat": 39.37178345700005,
+		"lng": 16.05981036702515,
+		"group": "nodes"
+	},
+	{
+		"id": 431,
+		"source": 3173,
+		"target": 2530,
+		"group": "edges"
+	},
+	{
+		"id": 3173,
+		"labels": [
+			"Emerging"
+		],
+		"name": "Blue growth",
+		"group": "nodes"
+	},
+	{
+		"id": 52049,
+		"source": 2530,
+		"target": 3220,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 3220,
+		"labels": [
+			"Sll"
+		],
+		"code": "1840",
+		"name": "PETILIA POLICASTRO",
+		"ncom": 3,
+		"population": 18168,
+		"area": 242,
+		"lat": 39.101171615000055,
+		"lng": 16.808183179131454,
+		"group": "nodes"
+	},
+	{
+		"id": 51491,
+		"source": 2530,
+		"target": 3181,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.8,
+		"group": "edges"
+	},
+	{
+		"id": 3181,
+		"labels": [
+			"Sll"
+		],
+		"code": "1801",
+		"name": "ACRI",
+		"ncom": 2,
+		"population": 24341,
+		"area": 300,
+		"lat": 39.43568603200006,
+		"lng": 16.45562308879073,
+		"group": "nodes"
+	},
+	{
+		"id": 51856,
+		"source": 2530,
+		"target": 3205,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 4,
+		"employee_avg": 5.6,
+		"group": "edges"
+	},
+	{
+		"id": 3205,
+		"labels": [
+			"Sll"
+		],
+		"code": "1825",
+		"name": "GIOIA TAURO",
+		"ncom": 5,
+		"population": 59032,
+		"area": 171,
+		"lat": 38.361939347500055,
+		"lng": 15.877697586636884,
+		"group": "nodes"
+	},
+	{
+		"id": 51644,
+		"source": 2530,
+		"target": 3191,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 3.3,
+		"group": "edges"
+	},
+	{
+		"id": 51700,
+		"source": 2530,
+		"target": 3195,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.8,
+		"group": "edges"
+	},
+	{
+		"id": 3195,
+		"labels": [
+			"Sll"
+		],
+		"code": "1815",
+		"name": "SAN MARCO ARGENTANO",
+		"ncom": 11,
+		"population": 31722,
+		"area": 429,
+		"lat": 39.58964896450007,
+		"lng": 16.11139703187542,
+		"group": "nodes"
+	},
+	{
+		"id": 52033,
+		"source": 2530,
+		"target": 3218,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 9,
+		"employee_avg": 12.7,
+		"group": "edges"
+	},
+	{
+		"id": 3218,
+		"labels": [
+			"Sll"
+		],
+		"code": "1838",
+		"name": "CROTONE",
+		"ncom": 12,
+		"population": 113132,
+		"area": 909,
+		"lat": 39.12631657950007,
+		"lng": 17.00611412018943,
+		"group": "nodes"
+	},
+	{
+		"id": 51632,
+		"source": 2530,
+		"target": 3190,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.8,
+		"group": "edges"
+	},
+	{
+		"id": 3190,
+		"labels": [
+			"Sll"
+		],
+		"code": "1810",
+		"name": "MORMANNO",
+		"ncom": 9,
+		"population": 18327,
+		"area": 515,
+		"lat": 39.93951462000007,
+		"lng": 16.029869677229595,
+		"group": "nodes"
+	},
+	{
+		"id": 51737,
+		"source": 2530,
+		"target": 3197,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 8,
+		"employee_avg": 10.9,
+		"group": "edges"
+	},
+	{
+		"id": 3197,
+		"labels": [
+			"Sll"
+		],
+		"code": "1817",
+		"name": "CATANZARO",
+		"ncom": 27,
+		"population": 149576,
+		"area": 855,
+		"lat": 38.967382354500074,
+		"lng": 16.559386829586884,
+		"group": "nodes"
+	},
+	{
+		"id": 51507,
+		"source": 2530,
+		"target": 3182,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 1.6,
+		"group": "edges"
+	},
+	{
+		"id": 3182,
+		"labels": [
+			"Sll"
+		],
+		"code": "1802",
+		"name": "AMANTEA",
+		"ncom": 9,
+		"population": 28094,
+		"area": 226,
+		"lat": 39.15963859850007,
+		"lng": 16.132796212666474,
+		"group": "nodes"
+	},
+	{
+		"id": 51571,
+		"source": 2530,
+		"target": 3186,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 1.6,
+		"group": "edges"
+	},
+	{
+		"id": 3186,
+		"labels": [
+			"Sll"
+		],
+		"code": "1806",
+		"name": "CASTROVILLARI",
+		"ncom": 14,
+		"population": 62669,
+		"area": 748,
+		"lat": 39.77000784750007,
+		"lng": 16.154513805845028,
+		"group": "nodes"
+	},
+	{
+		"id": 51984,
+		"source": 2530,
+		"target": 3214,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.8,
+		"group": "edges"
+	},
+	{
+		"id": 3214,
+		"labels": [
+			"Sll"
+		],
+		"code": "1834",
+		"name": "SANT'EUFEMIA D'ASPROMONTE",
+		"ncom": 4,
+		"population": 7747,
+		"area": 87,
+		"lat": 38.246362969000046,
+		"lng": 15.849730404722488,
+		"group": "nodes"
+	},
+	{
+		"id": 51943,
+		"source": 2530,
+		"target": 3211,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 14,
+		"employee_avg": 30.4,
+		"group": "edges"
+	},
+	{
+		"id": 3211,
+		"labels": [
+			"Sll"
+		],
+		"code": "1831",
+		"name": "REGGIO DI CALABRIA",
+		"ncom": 12,
+		"population": 217496,
+		"area": 469,
+		"lat": 38.109113881500036,
+		"lng": 15.750102662855777,
+		"group": "nodes"
+	},
+	{
+		"id": 51673,
+		"source": 2530,
+		"target": 3193,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 3.3,
+		"group": "edges"
+	},
+	{
+		"id": 3193,
+		"labels": [
+			"Sll"
+		],
+		"code": "1813",
+		"name": "ROSSANO",
+		"ncom": 6,
+		"population": 52821,
+		"area": 485,
+		"lat": 39.503633476500056,
+		"lng": 16.654718267894186,
+		"group": "nodes"
+	},
+	{
+		"id": 51977,
+		"source": 2530,
+		"target": 3213,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.4,
+		"group": "edges"
+	},
+	{
+		"id": 3213,
+		"labels": [
+			"Sll"
+		],
+		"code": "1833",
+		"name": "ROSARNO",
+		"ncom": 7,
+		"population": 28969,
+		"area": 231,
+		"lat": 38.511081185500046,
+		"lng": 16.080849128134744,
+		"group": "nodes"
+	},
+	{
+		"id": 51683,
+		"source": 2530,
+		"target": 3194,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.8,
+		"group": "edges"
+	},
+	{
+		"id": 3194,
+		"labels": [
+			"Sll"
+		],
+		"code": "1814",
+		"name": "SAN GIOVANNI IN FIORE",
+		"ncom": 5,
+		"population": 23177,
+		"area": 455,
+		"lat": 39.27333019150004,
+		"lng": 16.69714187765448,
+		"group": "nodes"
+	},
+	{
+		"id": 51900,
+		"source": 2530,
+		"target": 3208,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.8,
+		"group": "edges"
+	},
+	{
+		"id": 3208,
+		"labels": [
+			"Sll"
+		],
+		"code": "1828",
+		"name": "MELITO DI PORTO SALVO",
+		"ncom": 10,
+		"population": 34820,
+		"area": 467,
+		"lat": 38.03865332850006,
+		"lng": 15.87717798391819,
+		"group": "nodes"
+	},
+	{
+		"id": 51885,
+		"source": 2530,
+		"target": 3207,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.8,
+		"group": "edges"
+	},
+	{
+		"id": 3207,
+		"labels": [
+			"Sll"
+		],
+		"code": "1827",
+		"name": "MARINA DI GIOIOSA IONICA",
+		"ncom": 6,
+		"population": 20865,
+		"area": 193,
+		"lat": 38.36910145650006,
+		"lng": 16.253685176805895,
+		"group": "nodes"
+	},
+	{
+		"id": 51595,
+		"source": 2530,
+		"target": 3188,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 3.3,
+		"group": "edges"
+	},
+	{
+		"id": 3188,
+		"labels": [
+			"Sll"
+		],
+		"code": "1808",
+		"name": "CORIGLIANO CALABRO",
+		"ncom": 5,
+		"population": 45534,
+		"area": 300,
+		"lat": 39.604371139500046,
+		"lng": 16.450323590608903,
+		"group": "nodes"
+	},
+	{
+		"id": 51620,
+		"source": 2530,
+		"target": 3189,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 31,
+		"employee_avg": 54.3,
+		"group": "edges"
+	},
+	{
+		"id": 3189,
+		"labels": [
+			"Sll"
+		],
+		"code": "1809",
+		"name": "COSENZA",
+		"ncom": 52,
+		"population": 261238,
+		"area": 1508,
+		"lat": 39.35211262450005,
+		"lng": 16.24775109911668,
+		"group": "nodes"
+	},
+	{
+		"id": 51816,
+		"source": 2530,
+		"target": 3202,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 3.0,
+		"group": "edges"
+	},
+	{
+		"id": 3202,
+		"labels": [
+			"Sll"
+		],
+		"code": "1822",
+		"name": "BIANCO",
+		"ncom": 10,
+		"population": 16049,
+		"area": 283,
+		"lat": 38.04288864450007,
+		"lng": 16.068811143006542,
+		"group": "nodes"
+	},
+	{
+		"id": 52000,
+		"source": 2530,
+		"target": 3216,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.8,
+		"group": "edges"
+	},
+	{
+		"id": 3216,
+		"labels": [
+			"Sll"
+		],
+		"code": "1836",
+		"name": "TAURIANOVA",
+		"ncom": 3,
+		"population": 18502,
+		"area": 95,
+		"lat": 38.332543725500074,
+		"lng": 16.023542159797785,
+		"group": "nodes"
+	},
+	{
+		"id": 51553,
+		"source": 2530,
+		"target": 3185,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 2.5,
+		"group": "edges"
+	},
+	{
+		"id": 3185,
+		"labels": [
+			"Sll"
+		],
+		"code": "1805",
+		"name": "CASSANO ALL'IONIO",
+		"ncom": 14,
+		"population": 49850,
+		"area": 791,
+		"lat": 39.91201883550005,
+		"lng": 16.47044579260769,
+		"group": "nodes"
+	},
+	{
+		"id": 52011,
+		"source": 2530,
+		"target": 3217,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.7,
+		"group": "edges"
+	},
+	{
+		"id": 3217,
+		"labels": [
+			"Sll"
+		],
+		"code": "1837",
+		"name": "CIRÒ MARINA",
+		"ncom": 7,
+		"population": 27520,
+		"area": 317,
+		"lat": 39.37067663150003,
+		"lng": 17.007587377618893,
+		"group": "nodes"
+	},
+	{
+		"id": 51872,
+		"source": 2530,
+		"target": 3206,
+		"cluster": "Blue growth",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 1.7,
+		"group": "edges"
+	},
+	{
+		"id": 3206,
+		"labels": [
+			"Sll"
+		],
+		"code": "1826",
+		"name": "LOCRI",
+		"ncom": 9,
+		"population": 37973,
+		"area": 216,
+		"lat": 38.27188064600003,
+		"lng": 16.18488194974838,
+		"group": "nodes"
+	},
+	{
+		"id": 20373,
+		"source": 2530,
+		"target": 3194,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 20453,
+		"source": 2530,
+		"target": 3218,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 9,
+		"employee_avg": 12.387170381564,
+		"group": "edges"
+	},
+	{
+		"id": 20438,
+		"source": 2530,
+		"target": 3213,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.3512958065734794,
+		"group": "edges"
+	},
+	{
+		"id": 20414,
+		"source": 2530,
+		"target": 3206,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 1.672837174159426,
+		"group": "edges"
+	},
+	{
+		"id": 20391,
+		"source": 2530,
+		"target": 3200,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.7201823854091676,
+		"group": "edges"
+	},
+	{
+		"id": 3200,
+		"labels": [
+			"Sll"
+		],
+		"code": "1820",
+		"name": "SOVERATO",
+		"ncom": 12,
+		"population": 41060,
+		"area": 305,
+		"lat": 38.61608007950008,
+		"lng": 16.489212279737472,
+		"group": "nodes"
+	},
+	{
+		"id": 20450,
+		"source": 2530,
+		"target": 3217,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.836418587079713,
+		"group": "edges"
+	},
+	{
+		"id": 20409,
+		"source": 2530,
+		"target": 3205,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 4,
+		"employee_avg": 5.570547789950888,
+		"group": "edges"
+	},
+	{
+		"id": 20343,
+		"source": 2530,
+		"target": 3186,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 2.0,
+		"group": "edges"
+	},
+	{
+		"id": 20382,
+		"source": 2530,
+		"target": 3197,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 8,
+		"employee_avg": 10.880153587712984,
+		"group": "edges"
+	},
+	{
+		"id": 20376,
+		"source": 2530,
+		"target": 3195,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 20361,
+		"source": 2530,
+		"target": 3190,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 20331,
+		"source": 2530,
+		"target": 3182,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 2.0,
+		"group": "edges"
+	},
+	{
+		"id": 20429,
+		"source": 2530,
+		"target": 3211,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 14,
+		"employee_avg": 30.378723082735174,
+		"group": "edges"
+	},
+	{
+		"id": 20387,
+		"source": 2530,
+		"target": 3199,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 4,
+		"employee_avg": 7.009743220542357,
+		"group": "edges"
+	},
+	{
+		"id": 3199,
+		"labels": [
+			"Sll"
+		],
+		"code": "1819",
+		"name": "SELLIA MARINA",
+		"ncom": 9,
+		"population": 28848,
+		"area": 343,
+		"lat": 39.00365026450007,
+		"lng": 16.752661471252257,
+		"group": "nodes"
+	},
+	{
+		"id": 20350,
+		"source": 2530,
+		"target": 3188,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 3.0,
+		"group": "edges"
+	},
+	{
+		"id": 20340,
+		"source": 2530,
+		"target": 3185,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 2.0,
+		"group": "edges"
+	},
+	{
+		"id": 20469,
+		"source": 2530,
+		"target": 3224,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 5,
+		"employee_avg": 28.89,
+		"group": "edges"
+	},
+	{
+		"id": 3224,
+		"labels": [
+			"Sll"
+		],
+		"code": "1844",
+		"name": "VIBO VALENTIA",
+		"ncom": 22,
+		"population": 102838,
+		"area": 532,
+		"lat": 38.659578349500066,
+		"lng": 16.115342060378275,
+		"group": "nodes"
+	},
+	{
+		"id": 20459,
+		"source": 2530,
+		"target": 3220,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.1877143936531922,
+		"group": "edges"
+	},
+	{
+		"id": 20369,
+		"source": 2530,
+		"target": 3193,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 3.0,
+		"group": "edges"
+	},
+	{
+		"id": 20401,
+		"source": 2530,
+		"target": 3202,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 2.960921798262184,
+		"group": "edges"
+	},
+	{
+		"id": 20396,
+		"source": 2530,
+		"target": 3201,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 8,
+		"employee_avg": 16.229920806335493,
+		"group": "edges"
+	},
+	{
+		"id": 3201,
+		"labels": [
+			"Sll"
+		],
+		"code": "1821",
+		"name": "LAMEZIA TERME",
+		"ncom": 24,
+		"population": 131887,
+		"area": 815,
+		"lat": 38.95161643150004,
+		"lng": 16.298136594488142,
+		"group": "nodes"
+	},
+	{
+		"id": 20442,
+		"source": 2530,
+		"target": 3214,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.836418587079713,
+		"group": "edges"
+	},
+	{
+		"id": 20354,
+		"source": 2530,
+		"target": 3189,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 31,
+		"employee_avg": 54.21,
+		"group": "edges"
+	},
+	{
+		"id": 20446,
+		"source": 2530,
+		"target": 3216,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.836418587079713,
+		"group": "edges"
+	},
+	{
+		"id": 20423,
+		"source": 2530,
+		"target": 3208,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.836418587079713,
+		"group": "edges"
+	},
+	{
+		"id": 20328,
+		"source": 2530,
+		"target": 3181,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 20419,
+		"source": 2530,
+		"target": 3207,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.836418587079713,
+		"group": "edges"
+	},
+	{
+		"id": 542,
+		"source": 3176,
+		"target": 2530,
+		"group": "edges"
+	},
+	{
+		"id": 3176,
+		"labels": [
+			"Emerging"
+		],
+		"name": "Environmental industries",
+		"group": "nodes"
+	},
+	{
+		"id": 63958,
+		"source": 2530,
+		"target": 3193,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 3.0,
+		"group": "edges"
+	},
+	{
+		"id": 64145,
+		"source": 2530,
+		"target": 3207,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 64240,
+		"source": 2530,
+		"target": 3216,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 63887,
+		"source": 2530,
+		"target": 3188,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 3.0,
+		"group": "edges"
+	},
+	{
+		"id": 64118,
+		"source": 2530,
+		"target": 3205,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 4,
+		"employee_avg": 5.570547789950888,
+		"group": "edges"
+	},
+	{
+		"id": 63810,
+		"source": 2530,
+		"target": 3181,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 63984,
+		"source": 2530,
+		"target": 3195,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 64015,
+		"source": 2530,
+		"target": 3197,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 8,
+		"employee_avg": 10.880153587712984,
+		"group": "edges"
+	},
+	{
+		"id": 64085,
+		"source": 2530,
+		"target": 3202,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 3.6,
+		"group": "edges"
+	},
+	{
+		"id": 64194,
+		"source": 2530,
+		"target": 3211,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 14,
+		"employee_avg": 28.7,
+		"group": "edges"
+	},
+	{
+		"id": 63821,
+		"source": 2530,
+		"target": 3182,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 63914,
+		"source": 2530,
+		"target": 3189,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 31,
+		"employee_avg": 56.3,
+		"group": "edges"
+	},
+	{
+		"id": 64224,
+		"source": 2530,
+		"target": 3214,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 64290,
+		"source": 2530,
+		"target": 3220,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.42,
+		"group": "edges"
+	},
+	{
+		"id": 64076,
+		"source": 2530,
+		"target": 3201,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 8,
+		"employee_avg": 16.0,
+		"group": "edges"
+	},
+	{
+		"id": 64251,
+		"source": 2530,
+		"target": 3217,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 64051,
+		"source": 2530,
+		"target": 3200,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 2.0,
+		"group": "edges"
+	},
+	{
+		"id": 63921,
+		"source": 2530,
+		"target": 3190,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 64134,
+		"source": 2530,
+		"target": 3206,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 2.0,
+		"group": "edges"
+	},
+	{
+		"id": 64037,
+		"source": 2530,
+		"target": 3199,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 4,
+		"employee_avg": 7.009743220542357,
+		"group": "edges"
+	},
+	{
+		"id": 64274,
+		"source": 2530,
+		"target": 3218,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 9,
+		"employee_avg": 11.99,
+		"group": "edges"
+	},
+	{
+		"id": 63853,
+		"source": 2530,
+		"target": 3185,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 2.0,
+		"group": "edges"
+	},
+	{
+		"id": 63869,
+		"source": 2530,
+		"target": 3186,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 64157,
+		"source": 2530,
+		"target": 3208,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 63966,
+		"source": 2530,
+		"target": 3194,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 64221,
+		"source": 2530,
+		"target": 3213,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.3512958065734794,
+		"group": "edges"
+	},
+	{
+		"id": 63935,
+		"source": 2530,
+		"target": 3191,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 3.0,
+		"group": "edges"
+	},
+	{
+		"id": 404,
+		"source": 3172,
+		"target": 2530,
+		"group": "edges"
+	},
+	{
+		"id": 3172,
+		"labels": [
+			"Emerging"
+		],
+		"name": "Biopharma",
+		"group": "nodes"
+	},
+	{
+		"id": 50670,
+		"source": 2530,
+		"target": 3214,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.8,
+		"group": "edges"
+	},
+	{
+		"id": 50582,
+		"source": 2530,
+		"target": 3189,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 31,
+		"employee_avg": 54.3,
+		"group": "edges"
+	},
+	{
+		"id": 50565,
+		"source": 2530,
+		"target": 3185,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 2.5,
+		"group": "edges"
+	},
+	{
+		"id": 50598,
+		"source": 2530,
+		"target": 3195,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.8,
+		"group": "edges"
+	},
+	{
+		"id": 50626,
+		"source": 2530,
+		"target": 3201,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 8,
+		"employee_avg": 16.2,
+		"group": "edges"
+	},
+	{
+		"id": 50646,
+		"source": 2530,
+		"target": 3207,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.8,
+		"group": "edges"
+	},
+	{
+		"id": 50650,
+		"source": 2530,
+		"target": 3208,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.8,
+		"group": "edges"
+	},
+	{
+		"id": 50673,
+		"source": 2530,
+		"target": 3216,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.8,
+		"group": "edges"
+	},
+	{
+		"id": 50629,
+		"source": 2530,
+		"target": 3202,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 3.0,
+		"group": "edges"
+	},
+	{
+		"id": 50683,
+		"source": 2530,
+		"target": 3218,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 9,
+		"employee_avg": 12.7,
+		"group": "edges"
+	},
+	{
+		"id": 50574,
+		"source": 2530,
+		"target": 3188,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 3.3,
+		"group": "edges"
+	},
+	{
+		"id": 50609,
+		"source": 2530,
+		"target": 3197,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 8,
+		"employee_avg": 10.9,
+		"group": "edges"
+	},
+	{
+		"id": 50684,
+		"source": 2530,
+		"target": 3220,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 50588,
+		"source": 2530,
+		"target": 3191,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 3.3,
+		"group": "edges"
+	},
+	{
+		"id": 50569,
+		"source": 2530,
+		"target": 3186,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 1.6,
+		"group": "edges"
+	},
+	{
+		"id": 50677,
+		"source": 2530,
+		"target": 3217,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.7,
+		"group": "edges"
+	},
+	{
+		"id": 50614,
+		"source": 2530,
+		"target": 3199,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 4,
+		"employee_avg": 7.0,
+		"group": "edges"
+	},
+	{
+		"id": 50617,
+		"source": 2530,
+		"target": 3200,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.7,
+		"group": "edges"
+	},
+	{
+		"id": 50557,
+		"source": 2530,
+		"target": 3181,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.8,
+		"group": "edges"
+	},
+	{
+		"id": 50584,
+		"source": 2530,
+		"target": 3190,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.6,
+		"group": "edges"
+	},
+	{
+		"id": 50642,
+		"source": 2530,
+		"target": 3206,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.7,
+		"group": "edges"
+	},
+	{
+		"id": 50559,
+		"source": 2530,
+		"target": 3182,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 2,
+		"employee_avg": 1.6,
+		"group": "edges"
+	},
+	{
+		"id": 50668,
+		"source": 2530,
+		"target": 3213,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.4,
+		"group": "edges"
+	},
+	{
+		"id": 50636,
+		"source": 2530,
+		"target": 3205,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 4,
+		"employee_avg": 5.6,
+		"group": "edges"
+	},
+	{
+		"id": 50662,
+		"source": 2530,
+		"target": 3211,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 15,
+		"employee_avg": 30.4,
+		"group": "edges"
+	},
+	{
+		"id": 50593,
+		"source": 2530,
+		"target": 3193,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 3.3,
+		"group": "edges"
+	},
+	{
+		"id": 123,
+		"source": 3137,
+		"target": 2527,
+		"group": "edges"
+	},
+	{
+		"id": 2527,
+		"labels": [
+			"Ateco"
+		],
+		"code": "7211",
+		"description": "Ricerca e sviluppo sperimentale nel campo delle biotecnologie",
+		"group": "nodes"
+	},
+	{
+		"id": 20390,
+		"source": 2527,
+		"target": 3200,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.27981761459083276,
+		"group": "edges"
+	},
+	{
+		"id": 403,
+		"source": 3172,
+		"target": 2527,
+		"group": "edges"
+	},
+	{
+		"id": 50592,
+		"source": 2527,
+		"target": 3193,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.7,
+		"group": "edges"
+	},
+	{
+		"id": 50661,
+		"source": 2527,
+		"target": 3211,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 6.1,
+		"group": "edges"
+	},
+	{
+		"id": 50564,
+		"source": 2527,
+		"target": 3185,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.0,
+		"group": "edges"
+	},
+	{
+		"id": 50587,
+		"source": 2527,
+		"target": 3191,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.7,
+		"group": "edges"
+	},
+	{
+		"id": 50641,
+		"source": 2527,
+		"target": 3206,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.5,
+		"group": "edges"
+	},
+	{
+		"id": 50595,
+		"source": 2527,
+		"target": 3194,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.4,
+		"group": "edges"
+	},
+	{
+		"id": 50581,
+		"source": 2527,
+		"target": 3189,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 10,
+		"employee_avg": 11.8,
+		"group": "edges"
+	},
+	{
+		"id": 50613,
+		"source": 2527,
+		"target": 3199,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.1,
+		"group": "edges"
+	},
+	{
+		"id": 50616,
+		"source": 2527,
+		"target": 3200,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.3,
+		"group": "edges"
+	},
+	{
+		"id": 50573,
+		"source": 2527,
+		"target": 3188,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.7,
+		"group": "edges"
+	},
+	{
+		"id": 50608,
+		"source": 2527,
+		"target": 3197,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 1.8,
+		"group": "edges"
+	},
+	{
+		"id": 50635,
+		"source": 2527,
+		"target": 3205,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.5,
+		"group": "edges"
+	},
+	{
+		"id": 50625,
+		"source": 2527,
+		"target": 3201,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 2.6,
+		"group": "edges"
+	},
+	{
+		"id": 50682,
+		"source": 2527,
+		"target": 3218,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 6.0,
+		"group": "edges"
+	},
+	{
+		"id": 50628,
+		"source": 2527,
+		"target": 3202,
+		"cluster": "Biopharma",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.6,
+		"group": "edges"
+	},
+	{
+		"id": 20452,
+		"source": 2527,
+		"target": 3218,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 5.6,
+		"group": "edges"
+	},
+	{
+		"id": 20386,
+		"source": 2527,
+		"target": 3199,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.1402567794576435,
+		"group": "edges"
+	},
+	{
+		"id": 20381,
+		"source": 2527,
+		"target": 3197,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 1.769846412287017,
+		"group": "edges"
+	},
+	{
+		"id": 20353,
+		"source": 2527,
+		"target": 3189,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 12,
+		"employee_avg": 11.9,
+		"group": "edges"
+	},
+	{
+		"id": 20362,
+		"source": 2527,
+		"target": 3191,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 20408,
+		"source": 2527,
+		"target": 3205,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0894522100491122,
+		"group": "edges"
+	},
+	{
+		"id": 20349,
+		"source": 2527,
+		"target": 3188,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 20468,
+		"source": 2527,
+		"target": 3224,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 20368,
+		"source": 2527,
+		"target": 3193,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 20400,
+		"source": 2527,
+		"target": 3202,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.5790782017378164,
+		"group": "edges"
+	},
+	{
+		"id": 20395,
+		"source": 2527,
+		"target": 3201,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 2.6400791936645063,
+		"group": "edges"
+	},
+	{
+		"id": 20428,
+		"source": 2527,
+		"target": 3211,
+		"cluster": "EDUCATION AND KNOWLEDGE CREATION",
+		"year": 2012,
+		"units": 4,
+		"employee_avg": 5.941276917264829,
+		"group": "edges"
+	},
+	{
+		"id": 541,
+		"source": 3176,
+		"target": 2527,
+		"group": "edges"
+	},
+	{
+		"id": 63934,
+		"source": 2527,
+		"target": 3191,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 63957,
+		"source": 2527,
+		"target": 3193,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 64075,
+		"source": 2527,
+		"target": 3201,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 2.8,
+		"group": "edges"
+	},
+	{
+		"id": 63886,
+		"source": 2527,
+		"target": 3188,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0,
+		"group": "edges"
+	},
+	{
+		"id": 64014,
+		"source": 2527,
+		"target": 3197,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 1.769846412287017,
+		"group": "edges"
+	},
+	{
+		"id": 64050,
+		"source": 2527,
+		"target": 3200,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.0,
+		"group": "edges"
+	},
+	{
+		"id": 64273,
+		"source": 2527,
+		"target": 3218,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 3,
+		"employee_avg": 6.0,
+		"group": "edges"
+	},
+	{
+		"id": 64084,
+		"source": 2527,
+		"target": 3202,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 0.0,
+		"group": "edges"
+	},
+	{
+		"id": 64036,
+		"source": 2527,
+		"target": 3199,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.1402567794576435,
+		"group": "edges"
+	},
+	{
+		"id": 63913,
+		"source": 2527,
+		"target": 3189,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 12,
+		"employee_avg": 9.9,
+		"group": "edges"
+	},
+	{
+		"id": 64117,
+		"source": 2527,
+		"target": 3205,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 1,
+		"employee_avg": 1.0894522100491122,
+		"group": "edges"
+	},
+	{
+		"id": 64193,
+		"source": 2527,
+		"target": 3211,
+		"cluster": "Environmental industries",
+		"year": 2012,
+		"units": 4,
+		"employee_avg": 7.4,
+		"group": "edges"
+	}
+]
