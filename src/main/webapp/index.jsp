@@ -40,5 +40,13 @@
 <!-- Jquery AJAX -->
 <script type="text/javascript" src="../JS/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="https://unpkg.com/cytoscape@3.21.0/dist/cytoscape.min.js"></script>
+<script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+<script src="https://d3js.org/d3-quadtree.v1.min.js"></script>
+<script src="https://d3js.org/d3-timer.v1.min.js"></script>
+<script src="https://d3js.org/d3-force.v2.min.js"></script>
+<script>
+    window['d3-force'] = d3
+</script>
+<script src="JS/cytoscape-d3-force.js"></script>
 </body>
 </html>

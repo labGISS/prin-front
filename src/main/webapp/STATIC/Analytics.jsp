@@ -54,15 +54,12 @@
 <div class="my-2 mx-2 border-top border-secondary">
     <div class="row">
         <div class="col-md-8 my-3">
-            <div class="row position-relative">
-                <div id="map" style="height: 500px;">
-
-                </div>
+            <div id="map" class="row border border-3 position-relative" style="height: 600px; margin-left: 0.5px">
                 <button type="button" class="btn btn-success position-absolute top-0 end-0 btn-sm"
-                        style="width: auto; margin: 5px 20px">Reset
+                        style="width: auto; margin: 5px 20px; z-index: 1">Reset
                 </button>
                 <div class="legend border border-secondary rounded-3 pb-1 mx-4 my-2 position-absolute bottom-0 start-0 fw-normal"
-                     style="width: auto;">
+                     style="width: auto; z-index: 1">
                     <b>Legenda</b> <br>
                     <img src="../Images/square-green.svg" class="mt-1 me-1 mb-1"><a href="#Emergente" class="link-dark">Emergente</a>
                     <br>
@@ -262,6 +259,9 @@
             </select>
             <hr>
             <div>
+                <div class="row" id="info-box" style="font-size: 16px; justify-content: space-evenly; align-items: center">
+
+                </div>
                 <div class="row">
                     <div class="d-flex justify-content-end d-flex align-items-center">
                         <a href="Downlaod"><button type="button" class="btn btn-secondary btn-sm my-1 mx-1">Scarica i Dati</button></a>
@@ -282,5 +282,13 @@
 <!-- Jquery AJAX -->
 <script type="text/javascript" src="../JS/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="https://unpkg.com/cytoscape@3.21.0/dist/cytoscape.min.js"></script>
+<script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+<script src="https://d3js.org/d3-quadtree.v1.min.js"></script>
+<script src="https://d3js.org/d3-timer.v1.min.js"></script>
+<script src="https://d3js.org/d3-force.v2.min.js"></script>
+<script>
+    window['d3-force'] = d3
+</script>
+<script src="../JS/cytoscape-d3-force.js"></script>
 </body>
 </html>

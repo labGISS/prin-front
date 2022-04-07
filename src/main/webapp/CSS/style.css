@@ -31,7 +31,6 @@ video {
 
 #myInput {
     box-sizing: border-box;
-    background-image: url('searchicon.png');
     background-position: 14px 12px;
     background-repeat: no-repeat;
     font-size: 16px;
@@ -85,3 +84,17 @@ a{
     text-decoration: none;
 }
 
+#map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+dd {
+    text-align: end;
+}
