@@ -266,7 +266,7 @@
                     <div class="d-flex justify-content-end d-flex align-items-center">
                         <a href="Downlaod"><button type="button" class="btn btn-secondary btn-sm my-1 mx-1">Scarica i Dati</button></a>
                         <a href="Downlaod"><button type="button" class="btn btn-secondary btn-sm my-1 mx-1">Scarica la Mappa</button></a>
-                        <a href="Info"><button type="button" class="btn btn-info btn-sm my-1 mx-1" >Info</button></a>
+                        <a href="Info.jsp"><button type="button" class="btn btn-info btn-sm my-1 mx-1" >Info</button></a>
                     </div>
                 </div>
             </div>
