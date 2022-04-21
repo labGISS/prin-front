@@ -4,13 +4,15 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Analytics</title>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <link rel="stylesheet" href="../CSS/style.css"/>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <jsp:useBean id="test" class="it.labgis.prin_sound_frontend.SLLBean"/>
 </head>
 <body class="my-3 mx-3 lead" onload="uploadCyto()">
-
+<c:set var="Regione" value="0"/>
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#" style="width: 200px">
@@ -22,7 +24,8 @@
         <div class="collapse navbar-collapse" id="navbarNav" style="flex-grow: 0">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary mx-3 my-2" onclick="uploadData()" style="width: 90px">
+                    <button type="button" class="btn btn-outline-primary mx-3 my-2" onclick="uploadData()"
+                            style="width: 90px">
                         Grafo <br>
                         <img src="../Images/Graph.png" style="width: 40px">
                     </button>
@@ -244,29 +247,35 @@
         <div class="col-md mx-1 my-3">
             <h5> Regione </h5>
             <select class="form-select" aria-label="Default select example">
-                <option selected>Seleziona una Regione</option>
+                <option selected value="Calabria">Calabria</option>
                 <option value="Campania">Campania</option>
-                <option value="Calabria">Calabria</option>
                 <option value="Sicilia">Sicilia</option>
             </select>
             <br>
             <h5> Area Metropolitana/SLL </h5>
             <select class="form-select" aria-label="Default select example">
                 <option selected>Seleziona un'Area Metropolitana/SLL</option>
-                <option value="Campania">Campania</option>
-                <option value="Calabria">Calabria</option>
-                <option value="Sicilia">Sicilia</option>
+                <c:forEach var="SLL" items="${test.getSLL()}">
+                <option value="${SLL}">${SLL}</option>
+                </c:forEach>
             </select>
             <hr>
             <div>
-                <div class="row" id="info-box" style="font-size: 16px; justify-content: space-evenly; align-items: center">
+                <div class="row" id="info-box"
+                     style="font-size: 16px; justify-content: space-evenly; align-items: center">
 
                 </div>
                 <div class="row">
                     <div class="d-flex justify-content-end d-flex align-items-center">
-                        <a href="Downlaod"><button type="button" class="btn btn-secondary btn-sm my-1 mx-1">Scarica i Dati</button></a>
-                        <a href="Downlaod"><button type="button" class="btn btn-secondary btn-sm my-1 mx-1">Scarica la Mappa</button></a>
-                        <a href="Info.jsp"><button type="button" class="btn btn-info btn-sm my-1 mx-1" >Info</button></a>
+                        <a href="Downlaod">
+                            <button type="button" class="btn btn-secondary btn-sm my-1 mx-1">Scarica i Dati</button>
+                        </a>
+                        <a href="Downlaod">
+                            <button type="button" class="btn btn-secondary btn-sm my-1 mx-1">Scarica la Mappa</button>
+                        </a>
+                        <a href="Info">
+                            <button type="button" class="btn btn-info btn-sm my-1 mx-1">Info</button>
+                        </a>
                     </div>
                 </div>
             </div>
