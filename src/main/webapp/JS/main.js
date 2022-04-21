@@ -41,7 +41,7 @@ const CY_STYLE = [
                 return NODE_COLORS[node.data()['labels'][0]];
             },
             'color': '#333333',
-            'label': function(node) {
+            'label': function (node) {
                 let data = node.data();
                 return data[NODE_LABEL_ATTRIBUTE[data['labels'][0]]]
             },
@@ -179,17 +179,17 @@ function uploadCyto() {
         e.cy.container().style.cursor = 'default';
     });
 
-    cy.on('select', 'node', function(evt){
+    cy.on('select', 'node', function (evt) {
         evt.target.neighborhood().addClass("highlighted");
         displayElementInfobox(evt.target.data())
     });
 
-    cy.on('select', 'edge', function(evt){
+    cy.on('select', 'edge', function (evt) {
         evt.target.addClass("highlighted");
         displayElementInfobox(evt.target.data())
     });
 
-    cy.on('unselect', '*', function(evt){
+    cy.on('unselect', '*', function (evt) {
         evt.target.removeClass("highlighted");
         evt.target.neighborhood().removeClass("highlighted");
         clearElementInfobox()
@@ -205,9 +205,14 @@ function displayElementInfobox(data) {
     const attributes_list = Object.keys(ATTRIBUTES_TEXT);
 
     infobox.append(dl)
-    for (const [key, value] of Object.entries(data)) {
-        if(attributes_list.includes(key)) {
+    for (var [key, value] of Object.entries(data)) {
+        if (attributes_list.includes(key)) {
             dl.append($("<dt></dt>").addClass("col-sm-5").text(ATTRIBUTES_TEXT[key]));
+            if (typeof value === "number") {
+                if (!Number.isInteger(value)) {
+                    value = Number(value).toFixed(2);
+                }
+            }
             dl.append($("<dd></dd>").addClass("col-sm-7").text(value));
         }
     }
@@ -217,24 +222,22 @@ function clearElementInfobox() {
     $("#info-box").empty();
 }
 
-function dropdown(){
+function dropdown() {
     var x = document.getElementById("drop-menu");
     var setting = x.style.display;
     if (setting == "none") {
         x.style.display = "block";
-    }
-    else {
+    } else {
         x.style.display = "none";
     }
 }
 
-function dropdown(){
+function dropdown() {
     var x = document.getElementById("drop-menu");
     var setting = x.style.display;
     if (setting == "none") {
         x.style.display = "block";
-    }
-    else {
+    } else {
         x.style.display = "none";
     }
 }
