@@ -216,3 +216,27 @@ function displayElementInfobox(data) {
 function clearElementInfobox() {
     $("#info-box").empty();
 }
+
+function dropdown(){
+    var x = document.getElementById("drop-menu");
+    var setting = x.style.display;
+    if (setting == "none") {
+        x.style.display = "block";
+    }
+    else {
+        x.style.display = "none";
+    }
+}
+
+function dropdown(){
+    var x = document.getElementById("drop-menu");
+    var setting = x.style.display;
+    if (setting == "none") {
+        x.style.display = "block";
+    }
+    else {
+        x.style.display = "none";
+    }
+}
+
+

@@ -12,6 +12,7 @@
     <style>
         body {
             position: relative;
+            text-align: justify;
         }
 
         .container {
@@ -19,7 +20,7 @@
         }
     </style>
 
-    <title>Hello, world!</title>
+    <title>Info</title>
 </head>
 
 <body data-spy="scroll" data-target="#EpicNavbar">
@@ -28,19 +29,18 @@
 
     <ul class="nav nav-pills">
         <li class="nav-item">
-            <a class="nav-link" href="#Batman">Batman</a>
+            <a class="nav-link" href="#Home">Home</a>
         </li>
 
-        <li class="nav-item">
-            <a class="nav-link" href="#Superman">Superman</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#Yoda">Yoda</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#Anakin">Anakin Skywalker</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false"
+               onclick="dropdown()">Analytics</a>
+            <ul class="dropdown-menu" id="drop-menu" style="display: none">
+                <li><a class="dropdown-item" href="#grafo">Grafo</a></li>
+                <li><a class="dropdown-item" href="#mappa">Mappa</a></li>
+                <li><a class="dropdown-item" href="#analisi">Analisi</a></li>
+                <li><a class="dropdown-item" href="#trend">Trend</a></li>
+            </ul>
         </li>
     </ul>
 </nav>
@@ -49,26 +49,42 @@
     <div class="row">
         <div class="col-12">
             <div data-spy="scroll" data-target="#EpicNavbars" data-offset="0">
-                <h4 id="Batman">Batman</h4>
+                <h4 id="Home">Home</h4>
 
-                <p>Batman is a fictional superhero appearing in American comic books published by DC Comics. The
-                    character was created by artist Bob Kane and writer Bill Finger, and first appeared in Detective
-                    Comics #27 in 1939.</p>
+                <p>Parliamo della Home che riguarda la piattaforma, essa &egrave; stata realizzata utilizzando i
+                    linguaggi di HTML, JavaScript e CSS. Notiamo che essa presenta due pulsanti chiamati relativamente
+                    'esplora' ed 'analizza'. Cliccando su 'esplora' abbiamo la possibilit&agrave; di accedere alla
+                    pagina 'Analytics' con il pulsante 'grafico gi&agrave; selezionato.
+                    Cliccando su 'analizza' noteremo che l&#96;azione sar&agrave; la stessa del bottone 'esplora' con la
+                    differenza che il pulsante gi&agrave; selezionato sar&agrave; quello di 'analisi'.
+                </p>
+                    <img src="../Images/home%20sound.jpg" style="width: 100%">
 
-                <img class="w-100"
-                     src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/08/batman-2.jpg"/>
+                <h4 id="Analytics">Analytics</h4>
 
-                <h4 id="Superman">Superman</h4>
+                <p>In questa pagina &egrave; possibile visualizzare il grafo, la mappa, l&#96; analisi o il trend dell&#96; area
+                    metropolitana selezionata. Inoltre &egrave; possibile selezionare un cluster e l&#96; anno in cui si vogliono
+                    visualizzare i dati.
+                    Le icone dei cluster servono ad identificare il cluster desiderato all&#96; interno della mappa, esse
+                    sono state realizzate utilizzando la classe 'carousel' fornita da Bootstrap.
+                </p>
 
-                <p>Superman is a fictional superhero. The character was created by writer Jerry Siegel and artist Joe
-                    Shuster, and first appeared in the comic book Action Comics #1. The character regularly appears in
-                    comic books published by DC Comics, and has been adapted to a number of radio serials, movies, and
-                    television shows.</p>
-
-                <img class="w-100"
-                     src="https://vignette.wikia.nocookie.net/marvel_dc/images/a/a5/Superman_Vol_5_1_Textless.jpg/revision/latest?cb=20180711061148"/>
-
-                <h4 id="Yoda">Yoda</h4>
+                <h4 id="grafo">Grafo</h4>
+                <p>Parliamo del grafo; rappresenta il grafo della piattaforma e serve per visualizzare i collegamenti
+                    che ci sono con le varie entit&agrave;, ad esempio se partiamo da un cluster exporting avremmo la
+                    possibilit&agrave; di osservare le relazioni che esistono tra gli SLL, tra gli Ateco e tra i cluster
+                    emerging.</p>
+                <h4 id="mappa">Mappa</h4>
+                <p>Per quanto riguarda la mappa, essa svolge le stesse azioni del grafo con la differenza che consente
+                    di visualizzare il grafo su una mappa. </p>
+                <h4 id="analisi">Analisi</h4>
+                <p>Le analisi, invece, sono una serie di indici di analisi che vanno implementate. Un esempio di indice
+                    pu&ograve; essere quello della centralit&agrave; che serve a cambiare le dimensioni del grafo in base ai numeri di
+                    collegamenti. Sono una serie di indicatori di analisi che si trovano a partire dal grafo.</p>
+                <h4 id="trend">Trend</h4>
+                <p>I trend sono una serie di grafici che mostrano, con il passare degli anni, come sono evoluti
+                    determinati parametri.</p>
+                <!--<h4 id="Yoda">Yoda</h4>
 
                 <p>Yoda was a legendary Jedi Master and stronger than most in his connection with the Force. Small in
                     size but wise and powerful, he trained Jedi for over 800 years, playing integral roles in the Clone
@@ -85,6 +101,7 @@
 
                 <img class="w-100"
                      src="https://vignette.wikia.nocookie.net/disney/images/5/50/Profile_-_Anakin_Skywalker.png/revision/latest?cb=20190313110540"/>
+                     -->
             </div>
         </div>
     </div>
@@ -101,6 +118,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async></script>
+<script src="../JS/main.js"></script>
 
 <script>
     window.addEventListener("resize", ResizeWindow);
