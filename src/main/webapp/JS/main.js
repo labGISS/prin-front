@@ -1,8 +1,8 @@
 const NODE_COLORS = {
-    'Sll': '#1f77b4',
-    'Ateco': '#b41f53',
-    'Exporting': '#fff600',
-    'Emerging': '#66bd54'
+    'Sll': '#03038c',
+    'Ateco': '#bb0000',
+    'Exporting': '#b4b400',
+    'Emerging': '#008000'
 };
 
 const NODE_LABEL_ATTRIBUTE = {
@@ -118,57 +118,13 @@ function filterFunction() {
     }
 }
 
-function uploadData() {
-    $.ajax({
-        type: 'GET',
-        dataType: "json",
-        url: '/JSON/sll.json',
-        success: function (data) {
-            var elements;
-            if (Array.isArray(data)) {
-                elements = data.map(element => {
-                    return {group: element.group, data: element}
-                });
-            } else {
-                const nodes = data.nodes;
-                const rels = data.rels;
-
-                const cyNodes = nodes.map((node) => {
-                    return {data: node}
-                });
-
-                const cyRels = rels.map((rel) => {
-                    return {data: rel}
-                });
-
-                elements = {
-                    nodes: cyNodes,
-                    edges: cyRels
-                };
-            }
-            window.cy.add(elements);
-            window.cy.layout({
-                name: 'd3-force',
-                animate: true,
-                linkId: function id(d) {
-                    return d.id;
-                },
-                linkDistance: 10,
-                manyBodyStrength: -300,
-                randomize: false,
-                infinite: true
-            }).run();
-        }
-    })
-}
-
-function uploadCyto() {
+function initPage() {
     const cy = cytoscape({
         container: document.getElementById('map'),
         style: CY_STYLE,
-        zoom: 1,
-        minZoom: 0.5,
-        maxZoom: 3.0
+        zoom: 1.0,
+        minZoom: 0.7,
+        maxZoom: 2.5
     });
     cy.on('mouseover', '*', e => {
         e.target.addClass('hover');
@@ -194,9 +150,25 @@ function uploadCyto() {
         evt.target.neighborhood().removeClass("highlighted");
         clearElementInfobox()
     });
-
     window.cy = cy;
+
+    getCluster(function (data) {
+        for (var cluster of data) {
+            $("#myDropdown").append(`<a class="clusterAnchor" onclick="loadGraph('${cluster.name}')" style="cursor: pointer">${cluster.name}</a>`);
+        }
+    });
 }
+
+function loadGraph (clusterName){
+    window.cy.elements().unselect();
+    $("#select-SLL").val('');
+    $("#select-SLL").prop('disabled', true);
+    window.cy.elements().remove();
+    getGraph(clusterName, 2018, function (data) {
+        uploadData(data);
+    })
+}
+
 
 function displayElementInfobox(data) {
     const infobox = $('#info-box');
@@ -232,14 +204,96 @@ function dropdown() {
     }
 }
 
-function dropdown() {
-    var x = document.getElementById("drop-menu");
-    var setting = x.style.display;
-    if (setting == "none") {
-        x.style.display = "block";
+function addParam(url, param, value) {
+    var parser = new URL(url);
+    parser.searchParams.set(param, value);
+    window.location.replace(parser.href);
+    console.log(parser.href);
+    return false;
+}
+
+function changeRegione(Regione) {
+    window.cy.elements().unselect();
+    $("#select-SLL").empty();
+    console.log(Regione);
+    getSLL(Regione, function (data) {
+        var slls = data.nodes;
+        if (slls.length > 0) {
+            $("#select-SLL").append(`<option>Seleziona un'Area Metropolitana/SLL</option>`);
+        }
+        for (var sll of slls) {
+            $("#select-SLL").append(`<option value="${sll.id}">${sll.name}</option>`);
+        }
+        if (slls.length > 0) {
+            $("#select-SLL").prop('disabled', false);
+            $("#buttonCluster").prop('disabled', false);
+        } else {
+            window.cy.elements().remove();
+        }
+        uploadData(data);
+    })
+    $("#select-SLL").prop('disabled', true);
+    $("#buttonCluster").prop('disabled', true);
+}
+
+function selectSLL(idSLL) {
+    window.cy.elements().unselect();
+    window.cy.elements(`node[id="${idSLL}"]`).select();
+}
+
+/* Per Cytoscape */
+
+function toggleMap() {
+    console.log("TOGGLE");
+    if (!window.cyMap) {
+        enableMap()
     } else {
-        x.style.display = "none";
+        disableMap()
     }
 }
 
+function enableMap() {
+    cy.container().setAttribute("id", "graph");
 
+    // cy.panzoom('destroy');
+
+    const cyMap = cy.L({
+        minZoom: 0,
+        maxZoom: 18,
+    }, {
+        getPosition: (node) => {
+            const lng = node.data('lng');
+            const lat = node.data('lat');
+            return typeof lng === "number" && typeof lat === "number"
+                ? {lat, lng}
+                : null;
+        },
+        setPosition: (node, lngLat) => {
+            if (typeof node.data('lon') === "number" && typeof node.data('lat') === "number") {
+                node.data('lng', lngLat.lng);
+                node.data('lat', lngLat.lat);
+            } else {
+                node.scratch('leaflet', lngLat);
+            }
+        },
+        animate: true,
+        animationDuration: 500,
+        // hideNonPositional: true,
+        delayOnMove: 50,
+        runLayoutOnViewport: false,
+    });
+
+    window.cyMap = cyMap;
+    L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        minZoom: 0,
+        maxZoom: 18,
+    }).addTo(window.cyMap.map);
+}
+
+function disableMap() {
+    if (window.cyMap) {
+        window.cyMap.destroy();
+        window.cyMap = undefined;
+    }
+    // cy.panzoom();
+}

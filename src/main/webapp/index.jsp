@@ -15,22 +15,30 @@
 <div class="container my-5 text-center">
     <div class="d-flex flex-row bd-highlight mb-3 d-flex justify-content-around d-flex align-items-center">
         <div class="p-2 bd-highlight"><img src=Images/SOUND_logo-01.png style="width: 70%"></div>
-        <div class="p-2 bd-highlight"><img src=Images/logo-unisa-png.png style="width: 30%"></div>
+        <a href="https://www.unisa.it/"><img src=Images/logo-unisa-png.png style="width: 50%"></a>
+        <a href="https://www.unirc.it/"><img src=Images/logo-uni-mediterranea.webp style="width: 70%"></a>
+        <a href="https://www.unipa.it/"><img src=Images/logo-uni-palermo.webp style="width: 70%"></a>
     </div>
 </div>
 <div class="container px-5 text-center">
-    <div class="container border border-secondary d-flex justify-content-evenly container-home" style="height: 400px;">
-        <video src="Videos/Back_Home.mp4" autoplay loop playsinline muted></video>
-        <div class="container px-5 d-flex justify-content-evenly d-flex align-items-center container_button">
-            <a href="STATIC/Analytics.jsp">
-                <button type="button" class="btn btn-dark my-5 btn-lg">Esplora</button>
-            </a>
-            <a href="STATIC/Analytics.jsp">
-                <button type="button" class="btn btn-dark my-5 btn-lg">Analizza</button>
-            </a>
+    <div class="row align-items-center">
+        <div class="col-4">
+            <p> Questo progetto vede la collaborazione delle Università di Salerno, Reggio Calabria e Palermo.
+                Lo scopo è quello di analizzare quali aziende sono maggiormente sviluppate all'interno del territorio
+                interessato. </p>
+        </div>
+        <div class="col-8">
+            <div class="container border border-secondary d-flex justify-content-evenly container-home"
+                 style="height: 400px;">
+                <video src="Videos/Back_Home.mp4" autoplay loop playsinline muted></video>
+                <div class="container px-5 d-flex justify-content-evenly d-flex align-items-center container_button">
+                    <a href="STATIC/Analytics.jsp">
+                        <button type="button" class="btn btn-dark my-5 btn-lg">Esplora</button>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-
 </div>
 <script src="JS/main.js"></script>
 <!-- Option 1: Bootstrap Bundle with Popper -->

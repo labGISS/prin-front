@@ -9,13 +9,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <jsp:useBean id="test" class="it.labgis.prin_sound_frontend.SLLBean"/>
 </head>
-<body class="my-3 mx-3 lead" onload="uploadCyto()">
-<c:set var="Regione" value="0"/>
+<body class="my-3 mx-3 lead" onload="initPage()">
+
+<!-- Navbar con il tasto Home e i bottoni relativi alle varie funzionalità -->
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="width: 200px">
+        <a class="navbar-brand" onclick="location.reload()" style="width: 200px; cursor: pointer;">
             <img src="../Images/SOUND_logo-01.png" style="width: 100%"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,14 +24,14 @@
         <div class="collapse navbar-collapse" id="navbarNav" style="flex-grow: 0">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <button type="button" class="btn btn-outline-primary mx-3 my-2" onclick="uploadData()"
-                            style="width: 90px">
+                    <button type="button" class="btn btn-outline-primary mx-3 my-2" style="width: 90px">
                         Grafo <br>
                         <img src="../Images/Graph.png" style="width: 40px">
                     </button>
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-outline-secondary mx-3 my-2" style="width: 90px">
+                    <button type="button" class="btn btn-outline-secondary mx-3 my-2" onclick="toggleMap()"
+                            style="width: 90px">
                         Mappa <br>
                         <img src="../Images/World.webp" style="width: 40px">
                     </button>
@@ -53,24 +53,26 @@
     </div>
 </nav>
 
-
+<!-- Parte centrale del sito web -->
 <div class="my-2 mx-2 border-top border-secondary">
     <div class="row">
+
+        <!-- Contenitore con la mappa, legenda e tasto reset  -->
         <div class="col-md-8 my-3">
             <div id="map" class="row border border-3 position-relative" style="height: 600px; margin-left: 0.5px">
                 <button type="button" class="btn btn-success position-absolute top-0 end-0 btn-sm"
-                        style="width: auto; margin: 5px 20px; z-index: 1">Reset
+                        style="width: auto; margin: 5px 20px; z-index: 100" onclick="changeRegione('')">Reset
                 </button>
                 <div class="legend border border-secondary rounded-3 pb-1 mx-4 my-2 position-absolute bottom-0 start-0 fw-normal"
                      style="width: auto; z-index: 1">
                     <b>Legenda</b> <br>
-                    <img src="../Images/square-green.svg" class="mt-1 me-1 mb-1"><a href="#Emergente" class="link-dark">Emergente</a>
+                    <img src="../Images/square-green.svg" class="mt-1 me-1 mb-1"><a href="#Emerging" class="link-dark">Emergente</a>
                     <br>
                     <img src="../Images/square-red.svg" class="me-1 mb-1"><a href="#Ateco" class="link-dark">Ateco</a>
                     <br>
                     <img src="../Images/square-lightblue.svg" class="me-1 mb-1"><a href="#SLL" class="link-dark">SLL</a>
                     <br>
-                    <img src="../Images/square-yellow.svg" class="me-1 mb-1"><a href="#Esportazione" class="link-dark">Esportazione</a>
+                    <img src="../Images/square-yellow.svg" class="me-1 mb-1"><a href="#Exporting" class="link-dark">Esportazione</a>
                     <br>
                 </div>
             </div>
@@ -169,67 +171,37 @@
                 </div>
                 <div class="d-flex align-items-center" style="width: 20%">
                     <div class="dropdown">
-                        <button onclick="myFunction()" class="dropbtn btn btn-secondary">Ricerca Cluster</button>
+                        <button id="buttonCluster" onclick="myFunction()" class="dropbtn btn btn-secondary" disabled>
+                            Ricerca Cluster
+                        </button>
                         <div id="myDropdown" class="dropdown-content fs-6" style="overflow: scroll; height: 200px;">
                             <input type="text" placeholder="Cerca.." id="myInput" onkeyup="filterFunction()">
-                            <a href="#Aerospace Vehicles and Defence">Aerospace Vehicles and Defence</a>
-                            <a href="#Agricultural Inputs and Services">Agricultural Inputs and Services</a>
-                            <a href="#Apparel">Apparel</a>
-                            <a href="#Appliances">Appliances</a>
-                            <a href="#Automotive">Automotive</a>
-                            <a href="#Biopharmaceuticals">Biopharmaceuticals</a>
-                            <a href="#Business Services">Business Services</a>
-                            <a href="#Coal Mining">Coal Mining</a>
-                            <a href="#Communication Equipment and Services">Communication Equipment and Services</a>
-                            <a href="#Construction Products and Services">Construction Products and Services</a>
-                            <a href="#Distribution and Electronic Commerce">Distribution and Electronic Commerce</a>
-                            <a href="#Downstream Chemical Products">Downstream Chemical Products</a>
-                            <a href="#Downstream Metal Products">Downstream Metal Products</a>
-                            <a href="#Education and Knowledge Creation">Education and Knowledge Creation</a>
-                            <a href="#Electric Power Generation and Transmission">Electric Power Generation and
-                                Transmission</a>
-                            <a href="#Environmental Services">Environmental Services</a>
-                            <a href="#Financial Services">Financial Services</a>
-                            <a href="#Fishing and Fishing Products">Fishing and Fishing Products</a>
-                            <a href="#Food Processing and Manufacturing">Food Processing and Manufacturing</a>
-                            <a href="#Footwear">Footwear</a>
-                            <a href="#Forestry">Forestry</a>
-                            <a href="#Furniture">Furniture</a>
-                            <a href="#Heavy Machinery and Manufacturing Technology">Heavy Machinery and Manufacturing
-                                Technology</a>
-                            <a href="#Hospitality and Tourism">Hospitality and Tourism</a>
-                            <a href="#Information Technology and Analytical Instruments">Information Technology and
-                                Analytical Instruments</a>
-                            <a href="#Insurance Services">Insurance Services</a>
-                            <a href="#Jewellery and Precious Metals">Jewellery and Precious Metals</a>
-                            <a href="#Leather and Related Products">Leather and Related Products</a>
-                            <a href="#Lighting and Electrical Equipment ">Lighting and Electrical Equipment </a>
-                            <a href="#Livestock Processing">Livestock Processing</a>
-                            <a href="#Marketing, Design, and Publishing">Marketing, Design, and Publishing</a>
-                            <a href="#Medical Devices">Medical Devices</a>
-                            <a href="#Metal Mining">Metal Mining</a>
-                            <a href="#Metalworking Technology">Metalworking Technology</a>
-                            <a href="#Music and Sound Recording">Music and Sound Recording</a>
-                            <a href="#Non-Metal Mining">Non-Metal Mining</a>
-                            <a href="#Paper and Packaging">Paper and Packaging</a>
-                            <a href="#Performing Arts">Performing Arts</a>
-                            <a href="#Plastics">Plastics</a>
-                            <a href="#Printing Services">Printing Services</a>
-                            <a href="#Production and Transportation of Oil and Gas">Production and Transportation of Oil
-                                and Gas</a>
-                            <a href="#Recreation and Small Electrical Products">Recreation and Small Electrical
-                                Products</a>
-                            <a href="#Textile Production">Textile Production</a>
-                            <a href="#Tobacco">Tobacco</a>
-                            <a href="#Transport and Logistics">Transport and Logistics</a>
-                            <a href="#Upstream Chemicals">Upstream Chemicals</a>
-                            <a href="#Upstream Metal Production">Upstream Metal Production</a>
-                            <a href="#Video Production and Distribution">Video Production and Distribution</a>
-                            <a href="#Vulcanized and Fired Materials">Vulcanized and Fired Materials</a>
-                            <a href="#Water Transport">Water Transport</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Range da rivedere -->
+                <div class="mx-2 mt-5 text-center">
+                    <h5 class="mb-2">Seleziona l'anno di cui vuoi visualizzare i dati</h5>
+                    <div>
+                        <input type="range" value="2019" min="2011" max="2019"
+                               oninput="this.nextElementSibling.value = this.value">
+                        <output>2019</output>
+                    </div>
+                    <div class="range my-1 px-5" style="width: 98%;">
+                        <div class="field">
+                            <div class="value left">
+                                2011
+                            </div>
+                            <input type="range" min="2011" max="2019" value="2019" steps="1">
+                            <div class="value right">
+                                2019
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                </div>
+
                 <div class="mx-2 mt-5 text-center">
                     <h5 class="mb-2">Seleziona l'anno di cui vuoi visualizzare i dati</h5>
                     <button type="button" class="btn btn-outline-success my-1">2011</button>
@@ -242,28 +214,30 @@
                     <button type="button" class="btn btn-outline-success my-1">2018</button>
                     <button type="button" class="btn btn-outline-success my-1">2019</button>
                 </div>
+                -->
+                </div>
             </div>
         </div>
         <div class="col-md mx-1 my-3">
             <h5> Regione </h5>
-            <select class="form-select" aria-label="Default select example">
-                <option selected value="Calabria">Calabria</option>
-                <option value="Campania">Campania</option>
-                <option value="Sicilia">Sicilia</option>
+            <select class="form-select" aria-label="Default select example" onchange="changeRegione(this.value)">
+                ${param.Regione}
+                <option value="" selected> Seleziona una Regione</option>
+                <option value="Calabria" onclick="addParam(window.location, 'Regione', this.value)">Calabria
+                </option>
+                <option value="Campania" onclick="addParam(window.location, 'Regione', this.value)">Campania
+                </option>
+                <option value="Sicilia" onclick="addParam(window.location, 'Regione', this.value)">Sicilia</option>
             </select>
             <br>
             <h5> Area Metropolitana/SLL </h5>
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Seleziona un'Area Metropolitana/SLL</option>
-                <c:forEach var="SLL" items="${test.getSLL()}">
-                <option value="${SLL}">${SLL}</option>
-                </c:forEach>
+            <select class="form-select" aria-label="Default select example" id="select-SLL" disabled
+                    onchange="selectSLL(this.value)">
             </select>
             <hr>
             <div>
                 <div class="row" id="info-box"
                      style="font-size: 16px; justify-content: space-evenly; align-items: center">
-
                 </div>
                 <div class="row">
                     <div class="d-flex justify-content-end d-flex align-items-center">
@@ -271,7 +245,8 @@
                             <button type="button" class="btn btn-secondary btn-sm my-1 mx-1">Scarica i Dati</button>
                         </a>
                         <a href="Downlaod">
-                            <button type="button" class="btn btn-secondary btn-sm my-1 mx-1">Scarica la Mappa</button>
+                            <button type="button" class="btn btn-secondary btn-sm my-1 mx-1">Scarica la Mappa
+                            </button>
                         </a>
                         <a href="Info">
                             <button type="button" class="btn btn-info btn-sm my-1 mx-1">Info</button>
@@ -282,8 +257,6 @@
         </div>
     </div>
 </div>
-
-<script src="../JS/main.js"></script>
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -295,9 +268,26 @@
 <script src="https://d3js.org/d3-quadtree.v1.min.js"></script>
 <script src="https://d3js.org/d3-timer.v1.min.js"></script>
 <script src="https://d3js.org/d3-force.v2.min.js"></script>
+<script type="text/javascript" src="../JS/cytoscape-leaflet.js"></script>
 <script>
     window['d3-force'] = d3
 </script>
 <script src="../JS/cytoscape-d3-force.js"></script>
+<!-- For First SLider -->
+<script>
+    const slideValue = document.querySelector("span");
+    const inputSlider = document.querySelector("input");
+    inputSlider.oninput = (() => {
+        let value = inputSlider.value;
+        slideValue.textContent = value;
+        slideValue.style.left = (value / 2) + "%";
+        slideValue.classList.add("show");
+    });
+    inputSlider.onblur = (() => {
+        slideValue.classList.remove("show");
+    });
+</script>
+<script src="../JS/main.js"></script>
+<script src="../JS/services.js"></script>
 </body>
 </html>
