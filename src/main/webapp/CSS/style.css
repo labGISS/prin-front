@@ -81,7 +81,7 @@ video {
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 #map {
@@ -99,8 +99,14 @@ dd {
     text-align: end;
 }
 
-/* For First Slider */
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+}
 
+/* For First Slider */
+/*
 .range{
     height: 80px;
     background: #fff;
@@ -118,12 +124,11 @@ dd {
 }
 .field .value{
     position: absolute;
-    font-size: 18px;
-    color: #664AFF;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 700;
 }
 .field .value.left{
-    left: -40px;
+    left: -43px;
 }
 .field .value.right{
     right: -43px;
@@ -131,7 +136,7 @@ dd {
 .range input{
     -webkit-appearance: none;
     width: 100%;
-    height: 3px;
+    height: 10px;
     background: #ddd;
     border-radius: 5px;
     outline: none;
@@ -139,24 +144,46 @@ dd {
 }
 .range input::-webkit-slider-thumb{
     -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #664AFF;
-    border: 1px solid #664AFF;
+    width: 10px;
+    height: 30px;
+    border-radius: 15%;
+    background: #808080;
+    border: 1px solid #808080;
     cursor: pointer;
 }
 .range input::-moz-range-thumb{
     -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #664AFF;
-    border: 1px solid #664AFF;
+    width: 10px;
+    height: 30px;
+    border-radius: 15%;
+    background: #808080;
+    border: 1px solid #808080;
     cursor: pointer;
 }
 .range input::-moz-range-progress{
-    background: #664AFF; //this progress background is only shown on Firefox
+    background: darkgrey;
+}
+*/
+
+
+/* Slider Vincenzo */
+
+#slider {
+    margin-top: 20px;
+    width: 100%;
 }
 
+.ui-slider-tick {
+    position: absolute;
+    width: 2px;
+    height: 25px;
+    z-index: -1;
+}
 
+.ui-slider .ui-slider-handle {
+    width: 13px!important;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    margin-left: -5.6px!important;
+}

@@ -6,6 +6,7 @@
     <title>Analytics</title>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <link rel="stylesheet" href="../CSS/style.css"/>
+    <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -61,18 +62,18 @@
         <div class="col-md-8 my-3">
             <div id="map" class="row border border-3 position-relative" style="height: 600px; margin-left: 0.5px">
                 <button type="button" class="btn btn-success position-absolute top-0 end-0 btn-sm"
-                        style="width: auto; margin: 5px 20px; z-index: 100" onclick="changeRegione('')">Reset
+                        style="width: auto; margin: 5px 20px; z-index: 100" onclick="location.reload()">Reset
                 </button>
                 <div class="legend border border-secondary rounded-3 pb-1 mx-4 my-2 position-absolute bottom-0 start-0 fw-normal"
                      style="width: auto; z-index: 1">
                     <b>Legenda</b> <br>
-                    <img src="../Images/square-green.svg" class="mt-1 me-1 mb-1"><a href="#Emerging" class="link-dark">Emergente</a>
+                    <img src="../Images/square-green.svg" class="mt-1 me-1 mb-1"><a style="cursor: pointer" class="link-dark" onclick="evidenziaNodi('Emerging')">Emerging</a>
                     <br>
-                    <img src="../Images/square-red.svg" class="me-1 mb-1"><a href="#Ateco" class="link-dark">Ateco</a>
+                    <img src="../Images/square-red.svg" class="me-1 mb-1"><a style="cursor: pointer" onclick="evidenziaNodi('Ateco')"class="link-dark">Ateco</a>
                     <br>
-                    <img src="../Images/square-lightblue.svg" class="me-1 mb-1"><a href="#SLL" class="link-dark">SLL</a>
+                    <img src="../Images/square-lightblue.svg" class="me-1 mb-1"><a style="cursor: pointer" onclick="evidenziaNodi('Sll')"class="link-dark">SLL</a>
                     <br>
-                    <img src="../Images/square-yellow.svg" class="me-1 mb-1"><a href="#Exporting" class="link-dark">Esportazione</a>
+                    <img src="../Images/square-yellow.svg" class="me-1 mb-1"><a style="cursor: pointer" onclick="evidenziaNodi('Exporting')" class="link-dark">Exporting</a>
                     <br>
                 </div>
             </div>
@@ -81,88 +82,9 @@
                     <h6> CLUSTER </h6>
                 </div>
                 <div id="carouselExampleDark" class="carousel carousel-dark slide d-flex align-items-center"
-                     data-bs-ride="carousel" style="width: 55%">
-                    <div class="carousel-indicators" style="margin-bottom: -20px;">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
-                                aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
-                                aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
-                                aria-label="Slide 6"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active border-end border-secondary border-2"
-                             data-bs-interval="10000000000">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                        </div>
-                        <div class="carousel-item border-end border-secondary border-2" data-bs-interval="10000000000">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                        </div>
-                        <div class="carousel-item border-end border-secondary border-2" data-bs-interval="10000000000">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                        </div>
-                        <div class="carousel-item border-end border-secondary border-2" data-bs-interval="10000000000">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                        </div>
-                        <div class="carousel-item border-end border-secondary border-2" data-bs-interval="10000000000">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                        </div>
-                        <div class="carousel-item border-end border-secondary border-2" data-bs-interval="10000000000">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                            <img src="../Images/World.webp" class="mx-1 my-1" style="width: 30px">
-                        </div>
-                    </div>
+                     data-bs-ride="carousel" data-bs-interval="false" style="width: 55%">
+                    <div class="carousel-indicators" id="carouselButton" style="margin-bottom: -20px;"></div>
+                    <div class="carousel-inner" id="carouselCluster"></div>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
                             data-bs-slide="next" style="position: relative">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -180,47 +102,16 @@
                     </div>
                 </div>
 
-                <!-- Range da rivedere -->
-                <div class="mx-2 mt-5 text-center">
+                <!-- Range -->
+                <div class="mx-2 mt-5 text-center mb-5" style="position: sticky;">
                     <h5 class="mb-2">Seleziona l'anno di cui vuoi visualizzare i dati</h5>
-                    <div>
-                        <input type="range" value="2019" min="2011" max="2019"
-                               oninput="this.nextElementSibling.value = this.value">
-                        <output>2019</output>
-                    </div>
-                    <div class="range my-1 px-5" style="width: 98%;">
-                        <div class="field">
-                            <div class="value left">
-                                2011
-                            </div>
-                            <input type="range" min="2011" max="2019" value="2019" steps="1">
-                            <div class="value right">
-                                2019
-                            </div>
-                        </div>
-                    </div>
-                    <!--
-                </div>
-
-                <div class="mx-2 mt-5 text-center">
-                    <h5 class="mb-2">Seleziona l'anno di cui vuoi visualizzare i dati</h5>
-                    <button type="button" class="btn btn-outline-success my-1">2011</button>
-                    <button type="button" class="btn btn-outline-success my-1">2012</button>
-                    <button type="button" class="btn btn-outline-success my-1">2013</button>
-                    <button type="button" class="btn btn-outline-success my-1">2014</button>
-                    <button type="button" class="btn btn-outline-success my-1">2015</button>
-                    <button type="button" class="btn btn-outline-success my-1">2016</button>
-                    <button type="button" class="btn btn-outline-success my-1">2017</button>
-                    <button type="button" class="btn btn-outline-success my-1">2018</button>
-                    <button type="button" class="btn btn-outline-success my-1">2019</button>
-                </div>
-                -->
+                    <div id="slider"></div>
                 </div>
             </div>
         </div>
         <div class="col-md mx-1 my-3">
             <h5> Regione </h5>
-            <select class="form-select" aria-label="Default select example" onchange="changeRegione(this.value)">
+            <select id="select-Regione" class="form-select" aria-label="Default select example" onchange="changeRegione(this.value)">
                 ${param.Regione}
                 <option value="" selected> Seleziona una Regione</option>
                 <option value="Calabria" onclick="addParam(window.location, 'Regione', this.value)">Calabria
@@ -241,14 +132,9 @@
                 </div>
                 <div class="row">
                     <div class="d-flex justify-content-end d-flex align-items-center">
-                        <a href="Downlaod">
-                            <button type="button" class="btn btn-secondary btn-sm my-1 mx-1">Scarica i Dati</button>
-                        </a>
-                        <a href="Downlaod">
-                            <button type="button" class="btn btn-secondary btn-sm my-1 mx-1">Scarica la Mappa
-                            </button>
-                        </a>
-                        <a href="Info">
+                            <button id="dati-download" type="button" class="btn btn-secondary btn-sm my-1 mx-1" onclick="downloadDati()" disabled>Scarica i Dati</button>
+                            <button id="mappa-download" type="button" class="btn btn-secondary btn-sm my-1 mx-1" onclick="downloadMappa()" disabled>Scarica la Mappa</button>
+                        <a href="Info.jsp">
                             <button type="button" class="btn btn-info btn-sm my-1 mx-1">Info</button>
                         </a>
                     </div>
@@ -263,6 +149,7 @@
         crossorigin="anonymous"></script>
 <!-- Jquery AJAX -->
 <script type="text/javascript" src="../JS/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script type="text/javascript" src="https://unpkg.com/cytoscape@3.21.0/dist/cytoscape.min.js"></script>
 <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
 <script src="https://d3js.org/d3-quadtree.v1.min.js"></script>
@@ -273,7 +160,9 @@
     window['d3-force'] = d3
 </script>
 <script src="../JS/cytoscape-d3-force.js"></script>
-<!-- For First SLider -->
+<!--
+For First SLider
+
 <script>
     const slideValue = document.querySelector("span");
     const inputSlider = document.querySelector("input");
@@ -287,6 +176,7 @@
         slideValue.classList.remove("show");
     });
 </script>
+-->
 <script src="../JS/main.js"></script>
 <script src="../JS/services.js"></script>
 </body>

@@ -96,6 +96,12 @@ const CY_STYLE = [
             "width": 1
         }
     },
+    {
+        selector: 'node.unselected',
+        style: {
+            "opacity": 0.5
+        }
+    },
 ];
 
 function myFunction() {
@@ -153,13 +159,31 @@ function initPage() {
     window.cy = cy;
 
     getCluster(function (data) {
+        var carouselElement = $('<div class="carousel-item border-end border-secondary active border-2"></div>');
+        var carouselButton = $('<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>');
+        var counterButton = 1;
+        var counterCluster = 1;
+        var counter = 0;
         for (var cluster of data) {
+            carouselElement.append(`<a style="cursor: pointer" class="disabled anchorCluster" onclick="loadGraph('${cluster.name}')">
+                                <img src="../Images/World.webp" class="mx-1 my-1" style="width: 35px">
+                            </a>`)
             $("#myDropdown").append(`<a class="clusterAnchor" onclick="loadGraph('${cluster.name}')" style="cursor: pointer">${cluster.name}</a>`);
+            counter++;
+            counterCluster++;
+            if (counter > 7 || counterCluster > data.length) {
+                $("#carouselCluster").append(carouselElement);
+                carouselElement = $('<div class="carousel-item border-end border-secondary border-2"></div>');
+                $("#carouselButton").append(carouselButton);
+                carouselButton = $(`<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="${counterButton}" aria-label="Slide ${counterButton + 1}"></button>`);
+                counter = 0;
+                counterButton++;
+            }
         }
     });
 }
 
-function loadGraph (clusterName){
+function loadGraph(clusterName) {
     window.cy.elements().unselect();
     $("#select-SLL").val('');
     $("#select-SLL").prop('disabled', true);
@@ -168,7 +192,6 @@ function loadGraph (clusterName){
         uploadData(data);
     })
 }
-
 
 function displayElementInfobox(data) {
     const infobox = $('#info-box');
@@ -215,7 +238,6 @@ function addParam(url, param, value) {
 function changeRegione(Regione) {
     window.cy.elements().unselect();
     $("#select-SLL").empty();
-    console.log(Regione);
     getSLL(Regione, function (data) {
         var slls = data.nodes;
         if (slls.length > 0) {
@@ -225,15 +247,23 @@ function changeRegione(Regione) {
             $("#select-SLL").append(`<option value="${sll.id}">${sll.name}</option>`);
         }
         if (slls.length > 0) {
+            $("#dati-download").prop('disabled', false);
+            $("#mappa-download").prop('disabled', false);
             $("#select-SLL").prop('disabled', false);
             $("#buttonCluster").prop('disabled', false);
+            $(".anchorCluster").removeClass('disabled');
         } else {
             window.cy.elements().remove();
         }
         uploadData(data);
-    })
+    });
+
     $("#select-SLL").prop('disabled', true);
     $("#buttonCluster").prop('disabled', true);
+    $(".anchorCluster").addClass('disabled');
+    $("#dati-download").prop('disabled', true);
+    $("#mappa-download").prop('disabled', true);
+
 }
 
 function selectSLL(idSLL) {
@@ -241,8 +271,41 @@ function selectSLL(idSLL) {
     window.cy.elements(`node[id="${idSLL}"]`).select();
 }
 
-/* Per Cytoscape */
+function evidenziaNodi(TipoNodo) {
+    window.cy.elements(`node[labels.0 != "${TipoNodo}"]`).addClass("unselected");
+    window.cy.elements(`node[labels.0 = "${TipoNodo}"]`).removeClass("unselected");
+}
 
+function downloadDati() {
+
+    var dati = window.cy.elements().map(function (node) {
+        return node.data();
+    });
+
+    var json = JSON.stringify(dati);
+
+    json = [json];
+    var blob1 = new Blob(json, {type: "text/plain;charset=utf-8"});
+
+    var isIE = false
+    !!document.documentMode;
+    if (isIE) {
+        window.navigator.msSaveBlob(blob1, "Dati.json");
+    } else {
+        var url = window.URL
+        window.webkitURL;
+        link = url.createObjectURL(blob1);
+        var a = document.createElement("a");
+        a.download = "Dati.json";
+        a.href = link;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+}
+
+
+/* Per Cytoscape */
 function toggleMap() {
     console.log("TOGGLE");
     if (!window.cyMap) {
@@ -297,3 +360,87 @@ function disableMap() {
     }
     // cy.panzoom();
 }
+
+
+/* SLider Vincenzo */
+
+(function ($, undefined) {
+
+    // Defines the custom implementation of the built-in slider widget.
+    $.widget("app.slider", $.ui.slider, {
+
+        // The new "ticks" option defaults to false.
+        options: {
+            ticks: false
+        },
+
+        // Called when the slider is instantiated.
+        _create: function () {
+
+            // Call the orginal constructor, creating the slider normally.
+            this._super();
+
+            // If the "ticks" option is false or the "step" option is
+            // less than 5, there's nothing to do.
+            if (!this.options.ticks || this.options.step < 1) {
+                return;
+            }
+
+            // Setup some variables for rendering the tick marks below the slider.
+            var cnt = this.options.min,
+                background = this.element.css("border-color"),
+                left;
+
+            var count = (this.options.max - this.options.min) / this.options.step;
+            var iterator = 0;
+
+            while (cnt <= this.options.max) {
+
+                // Compute the "left" CSS property for the next tick mark.
+                left = iterator * (100 / count)
+                if (cnt === this.options.max) {
+                    left = left - 0.2;
+                }
+
+                left = left.toFixed(2) + "%";
+
+                // Creates the tick div, and adds it to the element. It adds the
+                // "ui-slider-tick" class, which has common properties for each tick.
+                // It also applies the computed CSS properties, "left" and "background".
+                var tick = $("<div/>").addClass("ui-slider-tick")
+                    .appendTo(this.element)
+                    .css({left: left, background: background});
+
+
+                /* Cambiare il controllo per i numeri */
+                var number = $(`<div>${cnt}</div>`).css({
+                    position: 'relative',
+                    left: '-24px', /* -20px */
+                    top: '20px', /* 20px */
+                    'font-size': '17px',
+                    'font-weight': 'bold',
+                });
+                tick.append(number);
+
+                cnt += this.options.step;
+                iterator++;
+            }
+
+        }
+
+    });
+
+    $(function () {
+
+        $("#slider").slider({
+            range: "min",
+            value: 2019,
+            min: 2011, /* 2011 */
+            max: 2019, /* 2019 */
+            step: 1,
+            ticks: true,
+        });
+
+    });
+
+})(jQuery);
