@@ -28,9 +28,9 @@
                 interessato. </p>
         </div>
         <div class="col-8">
-            <div class="container border border-secondary d-flex justify-content-evenly container-home"
-                 style="height: 400px;">
-                <video src="Videos/Back_Home.mp4" autoplay loop playsinline muted></video>
+            <div class="container border border-secondary d-flex justify-content-evenly container-home img-hover-zoom"
+                 style="height: 400px;" >
+                <img src="Images/Sfondo.PNG" class="imgSfondo">
                 <div class="container px-5 d-flex justify-content-evenly d-flex align-items-center container_button">
                     <a href="STATIC/Analytics.jsp">
                         <button type="button" class="btn btn-dark my-5 btn-lg">Esplora</button>
@@ -40,7 +40,6 @@
         </div>
     </div>
 </div>
-<script src="JS/main.js"></script>
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -56,5 +55,6 @@
     window['d3-force'] = d3
 </script>
 <script src="JS/cytoscape-d3-force.js"></script>
+<script src="JS/main.js"></script>
 </body>
 </html>

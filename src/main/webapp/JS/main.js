@@ -165,8 +165,9 @@ function initPage() {
         var counterCluster = 1;
         var counter = 0;
         for (var cluster of data) {
+            var iconName = "../Images/Exporting-Icons/" + cluster.name.replace(/,/gm, "").replace(/ /gm, "-") + ".png";
             carouselElement.append(`<a style="cursor: pointer" class="disabled anchorCluster" onclick="loadGraph('${cluster.name}')">
-                                <img src="../Images/World.webp" class="mx-1 my-1" style="width: 35px">
+                                <img src="${iconName}" style="width: 44px; margin-bottom: 4px;">
                             </a>`)
             $("#myDropdown").append(`<a class="clusterAnchor" onclick="loadGraph('${cluster.name}')" style="cursor: pointer">${cluster.name}</a>`);
             counter++;
@@ -180,6 +181,7 @@ function initPage() {
                 counterButton++;
             }
         }
+        $(".carousel-control-next").removeClass("hidden");
     });
 }
 
@@ -307,7 +309,6 @@ function downloadDati() {
 
 /* Per Cytoscape */
 function toggleMap() {
-    console.log("TOGGLE");
     if (!window.cyMap) {
         enableMap()
     } else {
@@ -316,7 +317,10 @@ function toggleMap() {
 }
 
 function enableMap() {
-    cy.container().setAttribute("id", "graph");
+    if (window.cyMap) {
+        return;
+    }
+    cy.container().setAttribute("id", "map");
 
     // cy.panzoom('destroy');
 

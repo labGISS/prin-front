@@ -3,14 +3,28 @@
     overflow: hidden;
 }
 
-video {
-    object-fit: cover;
+.imgSfondo {
+    overflow: hidden;
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 0.7;
+}
+
+.img-hover-zoom {
+    height: 300px;
+    overflow: hidden;
+}
+
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 .container_button {
@@ -105,65 +119,14 @@ a.disabled {
     opacity: 0.5;
 }
 
-/* For First Slider */
-/*
-.range{
-    height: 80px;
-    background: #fff;
-    border-radius: 10px;
-    padding: 0 65px 0 45px;
-    box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+.hidden{
+    display: none;
 }
 
-.field{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    position: relative;
+#map > *:not(.leaflet-container, .legend, .reset) {
+    /* override default cytoscape styles */
+    z-index: 500 !important;
 }
-.field .value{
-    position: absolute;
-    font-size: 17px;
-    font-weight: 700;
-}
-.field .value.left{
-    left: -43px;
-}
-.field .value.right{
-    right: -43px;
-}
-.range input{
-    -webkit-appearance: none;
-    width: 100%;
-    height: 10px;
-    background: #ddd;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-}
-.range input::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    width: 10px;
-    height: 30px;
-    border-radius: 15%;
-    background: #808080;
-    border: 1px solid #808080;
-    cursor: pointer;
-}
-.range input::-moz-range-thumb{
-    -webkit-appearance: none;
-    width: 10px;
-    height: 30px;
-    border-radius: 15%;
-    background: #808080;
-    border: 1px solid #808080;
-    cursor: pointer;
-}
-.range input::-moz-range-progress{
-    background: darkgrey;
-}
-*/
 
 
 /* Slider Vincenzo */
